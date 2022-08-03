@@ -33,6 +33,8 @@
     "build-check-folder": "mkdir -p ./build",
     "build-compile-js": "deno bundle ./src/app/index.ts ./build/app.js --config ./deno.jsonc",
     "build-compile-sw": "deno bundle ./src/sw.ts ./build/sw.js --config ./deno.jsonc",
-    "build-copy-html": "cp ./src/index.html ./build/index.html"
+    "build-copy-html": "cp ./src/index.html ./build/index.html",
+    
+    "standalone": "deno run --allow-net --allow-run ./standalone/app.ts"
   }
 }
